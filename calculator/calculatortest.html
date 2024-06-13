@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="mainbody">
+    <div>
+      <input type="color" name="" id="color" />
+      <button id="colorsubbtn">•</button>
+
+      <div class="calculator" style="border: solid">
+        <div class="calc">
+          <div>
+            <input
+              id="display"
+              style="border-color: white; border-radius: 17px 17px 0px 0px"
+              class="display"
+              type="input"
+              value=""
+            />
+          </div>
+          <div>
+            <input
+              onclick="display.value = ``"
+              class="button"
+              type="button"
+              style="
+                background-color: black;
+                border-color: aliceblue;
+                border-style: dotted;
+              "
+              value="AC"
+            />
+            <input
+              onclick="display.value = display.value.toString().slice(0,-1)"
+              class="button"
+              type="button"
+              style="
+                background-color: black;
+                border-color: aliceblue;
+                border-style: dotted;
+              "
+              value="DEL"
+            />
+            <input
+              onclick="display.value += '.'"
+              class="button"
+              type="button"
+              style="background-color: rgb(22, 36, 35); border-color: white"
+              value="."
+            />
+            <input
+              onclick="display.value += '/'"
+              class="button"
+              type="button"
+              style="background-color: #ff9d00; border-color: white"
+              value="/"
+            />
+          </div>
+          <div>
+            <input
+              class="button"
+              type="button"
+              value="7"
+              onclick="display.value += '7'"
+            />
+            <input
+              class="button"
+              type="button"
+              value="8"
+              onclick="display.value += '8'"
+            />
+            <input
+              class="button"
+              type="button"
+              value="9"
+              onclick="display.value += '9'"
+            />
+            <input
+              onclick="display.value += '*'"
+              class="button"
+              type="button"
+              style="background-color: #ff9d00; border-color: white"
+              value="*"
+            />
+          </div>
+          <div>
+            <input
+              class="button"
+              type="button"
+              value="4"
+              onclick="display.value += '4'"
+            />
+            <input
+              class="button"
+              type="button"
+              value="5"
+              onclick="display.value += '5'"
+            />
+            <input
+              class="button"
+              type="button"
+              value="6"
+              onclick="display.value += '6'"
+            />
+            <input
+              onclick="display.value += '-'"
+              class="button"
+              type="button"
+              style="background-color: #ff9d00; border-color: white"
+              value="-"
+            />
+          </div>
+          <div>
+            <input
+              class="button"
+              type="button"
+              value="1"
+              onclick="display.value += '1'"
+            />
+            <input
+              class="button"
+              type="button"
+              value="2"
+              onclick="display.value += '2'"
+            />
+            <input
+              class="button"
+              type="button"
+              value="3"
+              onclick="display.value += '3'"
+            />
+            <input
+              onclick="display.value += '+'"
+              class="button"
+              type="button"
+              style="background-color: #ff9d00; border-color: white"
+              value="+"
+            />
+          </div>
+          <div>
+            <input
+              class="button"
+              type="button"
+              value="00"
+              onclick="display.value += '00'"
+            />
+            <input
+              class="button"
+              type="button"
+              value="0"
+              onclick="display.value += '0'"
+            />
+            <input
+            onclick="display.value = eval(display.value)"
+              class="button"
+              style="
+                width: 150px;
+                background-color: black;
+                border-color: aliceblue;
+                border-style: dotted;
+              "
+              type="button"
+              value="="
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
+
